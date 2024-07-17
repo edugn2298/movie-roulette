@@ -1,0 +1,17 @@
+const data = {}
+
+async function fetchdata(url, data){
+  if (data != {}){
+    fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      data = data
+    })
+  } else if (data == {}){
+    div = document.createElement("div")
+    div.innerHTML = "Loading..."
+    document.body.appendChild(div)
+  }
+}
+
+fetchdata(`https://jsonplaceholder.typicode.com/users/id?${data}`, data)

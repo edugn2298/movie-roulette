@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API de Películas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+        <!-- Barra de búsqueda -->
+        <div class="mb-4">
+            <input id="searchInput" type="text" placeholder="Buscar películas..." class="w-full px-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring focus:border-blue-500">
+            <button onclick="searchMovies()" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md ml-2">Buscar</button>
+        </div>
+
+        <!-- Contenedor para mostrar resultados -->
+        <div id="resultsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Los resultados se mostrarán aquí -->
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
